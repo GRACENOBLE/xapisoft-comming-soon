@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="bg-white text-dark pt-16 md:pt-32">
       <Container>
-        <div className="flex flex-col items-start justify-center gap-8 ">
+        <div className="flex flex-col items-start justify-center gap-4 ">
           <div className="flex items-center justify-center 2xl:justify-start gap-6 text-lg">
             <p className="hidden md:flex rounded-full px-4 py-2 bg-red-500/10 w-fit ">
               🚧{" "}
@@ -18,7 +18,7 @@ const Hero = () => {
               </span>
               🚧
             </p>
-            <p className="rounded-full px-4 py-2 mt-16 mb-4 bg-red-500/10 w-fit md:hidden ">
+            <p className="rounded-full px-4 py-2 mt-16 bg-red-500/10 w-fit md:hidden ">
               🚧{" "}
               <span className="text-red-500/60">
                 {" "}
