@@ -58,7 +58,7 @@ const Hero = () => {
             width={1200}
             className="w-full object-cover h-[350px]"
           />
-          <p className="rounded-full px-4 py-2 mt-10 mb-4 bg-red-500/10 w-fit md:hidden mx-auto">
+          <p className="rounded-full px-4 py-2 my-10 bg-red-500/10 w-fit md:hidden mx-auto">
             🚧{" "}
             <span className="text-red-500/60">
               We will be up and running shortly.
