@@ -66,7 +66,7 @@ const LargeNavigation = ({ scrolled }: { scrolled: boolean }) => {
 
 const MobileNavigation = () => {
   return (
-    <div className="flex justify-between border py-4 px-6 rounded-full w-full md:w-fit md:hidden bg-white/50">
+    <div className="flex justify-between border py-4 px-6 rounded-full w-full md:w-fit md:hidden bg-white/75 backdrop-blur-md">
       <Link href={"/"}>
         <Image
           src={"/images/xapisoft-logo-dark.png"}
@@ -74,7 +74,7 @@ const MobileNavigation = () => {
           width={500}
           height={500}
           draggable="false"
-          className={cn("w-40 mr-10 object-contain shrink-0 2xl:hidden", {})}
+          className={cn("w-32 mr-10 object-contain shrink-0 2xl:hidden", {})}
         />
       </Link>
       <Sheet>

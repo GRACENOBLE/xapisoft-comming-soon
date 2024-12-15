@@ -6,9 +6,9 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-white text-dark pt-20 md:pt-32">
+    <section className="bg-white text-dark pt-16 md:pt-32">
       <Container>
-        <div className="flex flex-col justify-center gap-8 ">
+        <div className="flex flex-col items-start justify-center gap-8 ">
           <div className="flex items-center justify-center 2xl:justify-start gap-6 text-lg">
             <p className="hidden md:flex rounded-full px-4 py-2 bg-red-500/10 w-fit ">
               🚧{" "}
@@ -26,28 +26,29 @@ const Hero = () => {
               </span>
               🚧
             </p>
-            <p className="text-dark/60"></p>
           </div>
-          <h1 className="text-5xl xl:text-7xl 2xl:text-8xl 2xl:mb-8 pb-8">
+          <h1 className="text-4xl xl:text-7xl 2xl:text-8xl 2xl:mb-8 pb-8">
             <p className="leading-tight md:leading-none">
               We create websites, apps and brand designs that work{" "}
-              <span className="md:hidden">for your </span>
+              <span className="md:hidden">for your business</span>
             </p>
-            <p className="flex items-center gap-4">
-              <span className="md:hidden">business</span>
-              <Button className="mt-2 md:hidden" size={"lg"} variant={"dark"}>
+
+            <Link href={"mailto:info@xapisoft.co"}>
+              <Button className="mt-12 md:hidden" size={"lg"} variant={"dark"}>
                 Start a conversation
               </Button>
-            </p>
+            </Link>
             <p className="flex items-center gap-8">
               <span className="hidden md:block">for your business</span>
-              <Button
-                className="mt-4 hidden md:flex"
-                size={"lg"}
-                variant={"dark"}
-              >
-                Start a conversation
-              </Button>
+              <Link href={"mailto:info@xapisoft.co"}>
+                <Button
+                  className="mt-4 hidden md:flex"
+                  size={"lg"}
+                  variant={"dark"}
+                >
+                  Start a conversation
+                </Button>
+              </Link>
             </p>
           </h1>
           <Image
