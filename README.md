@@ -1,60 +1,36 @@
-# 📋 General Rules and Guidelines
-## Package manager: pnpm
-### 1. **Commit Messages**
-   - **Format**: `type(scope): description`
-   - **Example**: `feat(auth): add JWT-based authentication`
-   - **Common types**:
-     - `feat`: New feature
-     - `fix`: Bug fix
-     - `docs`: Documentation updates
-     - `style`: Code formatting (no logic change)
-     - `refactor`: Code improvement without adding a feature or fixing a bug
-     - `test`: Adding or fixing tests
-     - `chore`: Other updates like build tasks, package manager configs
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### 2. **Branch Naming**
-   - **Format**: `[name]-[type]/[short-description]`
-   - **Example**: `noble-feature/user-auth`, `noble-fix/bug-login-issue`
-   - **Common types**: 
-     - `feature`: New feature work
-     - `fix`: Bug fixes
-     - `hotfix`: Urgent fix
-     - `chore`: Non-functional changes
-     - `docs`: Documentation updates
-       
-   __DO NOT WORK ON THE MAIN BRANCH__
+## Getting Started
 
-### 3. **Pull Requests**
-   - **Focus** on a single feature, fix, or improvement.
-   - **Description** should include:
-     - **Purpose**: What the PR accomplishes
-     - **Changes**: Summary of changes
-     - **Dependencies** or instructions (if any)
-   - Add **reviewers**, and use **draft status** if PR is a work in progress.
+First, run the development server:
 
-### 4. **Code Style and Formatting**
-   - Ensure code follows the project’s **style guide**.
-   - Use **linters/formatters** (like Prettier, ESLint) before committing.
-   - Keep commits focused; **avoid unrelated changes** in a single commit.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-### 5. **Testing and Documentation**
-   - Include **tests** for all code changes.
-   - Update **documentation** for public methods, API endpoints, and architectural decisions.
-   - Ensure all tests **pass** before creating a pull request.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### 6. **Issues and Bug Reporting**
-   - When creating an **issue**, include:
-     - **Title** and description of the problem
-     - **Steps to reproduce** (if applicable)
-     - **Expected** vs **Actual results**
-     - **Environment details** (OS, Browser, Version)
-   - Use appropriate **labels** for easy tracking (`bug`, `enhancement`, `documentation`, `help wanted`).
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### 7. **Environment Setup**
-   - Follow the **Getting Started** instructions to set up the environment.
-   - Ensure all **dependencies** are up-to-date before running the application.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### 8. **Communication and Review**
-   - Comments should be **respectful** and **constructive**.
-   - **Request reviews** promptly, and provide context for the changes.
-   - Address all **review feedback** before merging.
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
